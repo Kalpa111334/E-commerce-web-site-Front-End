@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>New Tech</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <!-- bootstrap links -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- bootstrap links -->
+    <!-- fonts links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+    <!-- fonts links -->
+
+
+
+</head>
+
+<body class="b" style="overflow-x: hidden; background-color: #e8e8e8;">
+
+    <div class="row justify-content-center  p-4 ">
+        <div class="col-12 text-center">
+            <div class="loader" style="width: 100%;"></div>
+            <label class="form-label  fs-1 fw-bolder">Admin Panal</label>
+            <div class="loader" style="width: 100%;"></div>
+        </div>
+
+        <div class="col-12">
+            <div class="row">
+                <div class="col-2">
+                    <div class="col-2 d-none d-lg-block">
+
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+        <div class="col-lg-3  rounded border-2 mt-2 text-center border-bottom border-light opacity-75  ">
+            <div class="row g-3 p-2">
+
+                <div class="text-center border-bottom mb-3 border-secondary ">
+                    <label class="fs-3 text-secondary text-success ">Admin</label><br>
+                    <label class="fs-5 text-black  ">MR.KALPA</label>
+                </div>
+
+                <div class=" row mt-2 mx-3 justify-content-center text-start ">
+                    <p class="text-black fs-4 zoom1 "><i class="bi bi-sliders2"></i> Dashbord </p>
+                </div>
+
+                <div class=" row mt-2 mx-3 justify-content-center text-start ">
+                    <p class="text-black fs-4 zoom1 " onclick="manageu();"><i class="bi bi-people"></i> Manage Users
+                    </p>
+                </div>
+
+                <div class=" row mt-2 mx-3 justify-content-center text-start ">
+                    <p class="text-black fs-4 zoom1 " onclick="managep();"><i class="bi bi-box-seam"></i> Manage
+                        Products </p>
+                </div>
+
+                <hr class="border-secondary">
+
+                <div class=" row mt-2 mx-3 justify-content-center text-start ">
+                    <p class="text-black fs-4 zoom1 "><i class="bi bi-envelope-open mn"></i> Messenges </p>
+                </div>
+
+                <div class=" row mt-2 mx-3 justify-content-center text-start ">
+                    <p class="text-black fs-4 zoom1 "><i class="bi bi-bell"></i> Notifications </p>
+                </div>
+
+                <div class=" row mt-2 mx-3 justify-content-center text-start ">
+                    <p class="text-black fs-4 zoom1 "><i class="bi bi-app-indicator"></i> Requests </p>
+                </div>
+
+                <hr class="border-secondary">
+
+                <div class=" row mt-2 mx-3 justify-content-center text-start ">
+                    <p class="text-black fs-4 zoom1"><i class="bi bi-bar-chart"></i> Reports </p>
+                </div>
+
+                <div class=" row mt-2 mx-3 justify-content-center text-start ">
+                    <p class="text-black fs-4 zoom1"><i class="bi bi-sliders"></i> Settings </p>
+                </div>
+
+            </div>
+            <a href="adminlogin.html" type="button" class="btn btn-light d-none d-lg-block"
+                style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;"><i
+                    class="bi bi-box-arrow-left"></i> Log Out</a>
+        </div>
+
+        <div class="col-lg-8 bb m-2 bg-gradient border rounded">
+
+            <!-- Dashbord -->
+            <div class="row g-3 justify-content-center p-2  ">
+
+                <div class="text-center border-bottom mb-3 border-back ">
+                    <label class="fs-1 text-dark "><i class="bi bi-sliders2"></i> Dashbord</label><br><br>
+                </div>
+
+                <div class="card col-lg-3 rounded bg-dark m-3 p-3 text-white zoom1" style="width: 18rem;">
+                    <div class="card-body">
+                        <h1 class="card-title text-center"> <i class="bi bi-people"></i></h1>
+                        <h3 class="card-subtitle mb-2 text-body-secondary text-center">Users Management</h3>
+                        <h1 class="text-center">11520</h1>
+                        <button class="btn btn-primary col-11 ">Manage</button>
+
+                    </div>
+                </div>
+
+
+                <div class="card col-lg-3 rounded bg-dark m-3 p-3 text-white zoom1" style="width: 18rem;">
+                    <div class="card-body">
+                        <h1 class="card-title text-center"> <i class="bi bi-card-checklist"></i></h1>
+                        <h3 class="card-subtitle mb-2 text-body-secondary text-center">Sellers Management</h3>
+                        <h1 class="text-center">50</h1>
+                        <button class="btn btn-primary col-11 ">Manage</button>
+
+                    </div>
+                </div>
+
+
+
+                <div class="card col-lg-3 rounded bg-dark m-3 p-3 text-white zoom1" style="width: 18rem;">
+                    <div class="card-body">
+                        <h1 class="card-title text-center"> <i class="bi bi-check2-square"></i></h1>
+                        <h3 class="card-subtitle mb-2 text-body-secondary text-center">Orders Management</h3>
+                        <h1 class="text-center">90</h1>
+                        <button class="btn btn-primary col-11 ">Manage</button>
+
+                    </div>
+                </div>
+
+
+
+                <hr class="border border-back">
+
+                <span class="fs-4 fw-bold text-light text-dark text-center">Today Statistics</span>
+
+                <div class="card col-lg-3 rounded bg-dark m-3 p-3 text-white zoom1" style="width: 18rem;">
+                    <div class="card-body">
+                        <h1 class="card-title text-center"> <i class="bi bi-credit-card-2-front"></i></h1>
+                        <h3 class="card-subtitle mb-2 text-body-secondary text-center">Transactions Management</h3>
+                        <h1 class="text-center">90</h1>
+                        <button class="btn btn-primary col-11 ">Manage</button>
+
+                    </div>
+                </div>
+
+                <div class="card col-lg-3 rounded bg-dark m-3 p-3 text-white zoom1" style="width: 18rem;">
+                    <div class="card-body">
+                        <h1 class="card-title text-center"> <i class="bi bi-cash-coin"></i></h1>
+                        <h3 class="card-subtitle mb-2 text-body-secondary text-center">Income Management</h3>
+                        <h1 class="text-center">Rs.22 500</h1>
+                        <button class="btn btn-primary col-11 ">Manage</button>
+
+                    </div>
+                </div>
+
+                <div class="card col-lg-3 rounded bg-dark m-3 p-3 text-white zoom1" style="width: 18rem;">
+                    <div class="card-body">
+                        <h1 class="card-title text-center"> <i class="bi bi-box-arrow-up-right"></i></i></h1>
+                        <h3 class="card-subtitle mb-2 text-body-secondary text-center">Outcome Management</h3>
+                        <h1 class="text-center">Rs.50 000</h1>
+                        <button class="btn btn-primary col-11 ">Manage</button>
+
+                    </div>
+                </div>
+
+
+                <hr class="border border-back">
+
+                <span class="fs-4 fw-bold text-light text-dark text-center">Last Year Statistics</span>
+
+
+                <div class="card col-lg-3 rounded bg-dark m-3 p-3 text-white zoom1" style="width: 18rem;">
+                    <div class="card-body">
+                        <h1 class="card-title text-center"> <i class="bi bi-graph-up-arrow"></i></h1>
+                        <h3 class="card-subtitle mb-2 text-body-secondary text-center">Total Sales Management</h3>
+                        <h1 class="text-center">648</h1>
+                        <button class="btn btn-primary col-11 ">Manage</button>
+
+                    </div>
+                </div>
+
+
+                <div class="card col-lg-3 rounded bg-dark m-3 p-3 text-white zoom1" style="width: 18rem;">
+                    <div class="card-body">
+                        <h1 class="card-title text-center"> <i class="bi bi-graph-up-arrow"></i></h1>
+                        <h3 class="card-subtitle mb-2 text-body-secondary text-center">Sales Rice Management</h3>
+                        <h1 class="text-center">80%</h1>
+                        <button class="btn btn-primary col-11 ">Manage</button>
+
+                    </div>
+                </div>
+
+                <div class="card col-lg-3 rounded bg-dark m-3 p-3 text-white zoom1" style="width: 18rem;">
+                    <div class="card-body">
+                        <h1 class="card-title text-center"> <i class="bi bi-graph-up-arrow"></i></h1>
+                        <h3 class="card-subtitle mb-2 text-body-secondary text-center">Completed Odr Management</h3>
+                        <h1 class="text-center">100</h1>
+                        <button class="btn btn-primary col-11 ">Manage</button>
+
+                    </div>
+                </div>
+
+
+
+                <a href="AdminSignin.php" type="button" class="btn btn-light d-lg-none"
+                    style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;"><i
+                        class="bi bi-box-arrow-left"></i> Log Out</a>
+
+            </div>
+            <!-- Dashbord -->
+
+            <!-- Manage Users -->
+            <div class="row g-3 justify-content-center d-none p-2" id="ap2">
+
+                <div class="text-center border-bottom mb-3 border-back ">
+                    <label class="fs-1 text-black "><i class="bi bi-people"></i> Manage Users</label><br><br>
+                </div>
+
+                <div class="col-lg-3 rounded bg-dark m-3 p-3">
+                    <div class="row border border-primary rounded text-center p-3  justify-content-center">
+                        <span class="fs-5 text-primary "> <i class="bi bi-person"></i> User : <span
+                                class="text-light">KALPA</span> </span>
+                        <hr class="border-primary">
+                        <div class="">
+                            <img src="resource/user1.png" style="height: 100px;">
+                        </div>
+                        <hr class="border-primary m-1">
+                        <span class="fs-6 text-primary "> <i class="bi bi-person-video3"></i> Role : <span
+                                class="text-light">Administrator</span></span>
+                        <span class="fs-6 text-primary "> <i class="bi bi-envelope"></i> E-mail : <span
+                                class="text-light">kalpa@gmail.com</span></span>
+                        <hr class="border-primary">
+                        <button class="btn btn-primary">Details</button>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 rounded bg-dark m-3 p-3">
+                    <div class="row border border-primary rounded text-center p-3  justify-content-center">
+                        <span class="fs-5 text-primary "> <i class="bi bi-person"></i> User : <span
+                                class="text-light">Damithri</span> </span>
+                        <hr class="border-primary">
+                        <div class="">
+                            <img src="resource/user1.png" style="height: 100px;">
+                        </div>
+                        <hr class="border-primary m-1">
+                        <span class="fs-6 text-primary "> <i class="bi bi-person-video3"></i> Role : <span
+                                class="text-light">Seller</span></span>
+                        <span class="fs-6 text-primary "> <i class="bi bi-envelope"></i> E-mail : <span
+                                class="text-light">damithri@gmail.com</span></span>
+                        <hr class="border-primary">
+                        <button class="btn btn-primary">Details</button>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 rounded bg-dark m-3 p-3">
+                    <div class="row border border-primary rounded text-center p-3  justify-content-center">
+                        <span class="fs-5 text-primary "> <i class="bi bi-person"></i> User : <span
+                                class="text-light">customer</span> </span>
+                        <hr class="border-primary">
+                        <div class="">
+                            <img src="resource/user1.png" style="height: 100px;">
+                        </div>
+                        <hr class="border-primary m-1">
+                        <span class="fs-6 text-primary "> <i class="bi bi-person-video3"></i> Role : <span
+                                class="text-light">Customer</span></span>
+                        <span class="fs-6 text-primary "> <i class="bi bi-envelope"></i> E-mail : <span
+                                class="text-light">customer@gmail.com</span></span>
+                        <hr class="border-primary">
+                        <button class="btn btn-primary">Details</button>
+                    </div>
+                </div>
+                <a href="AdminSignin.php" type="button" class="btn btn-light d-lg-none"
+                    style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;"><i
+                        class="bi bi-box-arrow-left"></i> Log Out</a>
+
+            </div>
+            <!-- Manage Users -->
+
+            <!-- Manage Products -->
+            <div class="row g-3 justify-content-center d-none p-2" id="ap3">
+
+                <div class="text-center border-bottom mb-3 border-back ">
+                    <label class="fs-1 text-black "><i class="bi bi-box-seam"></i> Manage Products</label><br><br>
+                </div>
+
+                <div class="col-lg-3 rounded bg-dark m-3 p-3">
+                    <div class="row border border-warning rounded text-center p-3  justify-content-center">
+                        <span class="fs-5 text-warning "> <i class="bi bi-box-seam"></i>Product : <span
+                                class="text-light">I Phone 14</span> </span>
+                        <hr class="border-warning">
+                        <div class="">
+                            <img src="resource/Mobile_image/ap14.png" style="height: 100px;">
+                        </div>
+                        <hr class="border-warning m-1">
+                        <span class="fs-6 text-warning "> <i class="bi bi-list"></i> Category : <span
+                                class="text-light">Phones and Tabs</span></span>
+                        <span class="fs-6 text-warning "> <i class="bi bi-person-video2"></i> Seller : <span
+                                class="text-light">mr.mathiya@gmail.com</span></span>
+                        <hr class="border-warning">
+                        <button class="btn btn-success">Details</button>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 rounded bg-dark m-3 p-3">
+                    <div class="row border border-warning rounded text-center p-3  justify-content-center">
+                        <span class="fs-5 text-warning "> <i class="bi bi-box-seam"></i>Product : <span
+                                class="text-light">I Phone 14</span> </span>
+                        <hr class="border-warning">
+                        <div class="">
+                            <img src="resource/Mobile_image/ap14.png" style="height: 100px;">
+                        </div>
+                        <hr class="border-warning m-1">
+                        <span class="fs-6 text-warning "> <i class="bi bi-list"></i> Category : <span
+                                class="text-light">Phones and Tabs</span></span>
+                        <span class="fs-6 text-warning "> <i class="bi bi-person-video2"></i> Seller : <span
+                                class="text-light">email@gmail.com</span></span>
+                        <hr class="border-warning">
+                        <button class="btn btn-success">Details</button>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 rounded bg-dark m-3 p-3">
+                    <div class="row border border-warning rounded text-center p-3  justify-content-center">
+                        <span class="fs-5 text-warning "> <i class="bi bi-box-seam"></i>Product : <span
+                                class="text-light">I Phone 14</span> </span>
+                        <hr class="border-warning">
+                        <div class="">
+                            <img src="resource/Mobile_image/ap14.png" style="height: 100px;">
+                        </div>
+                        <hr class="border-warning m-1">
+                        <span class="fs-6 text-warning "> <i class="bi bi-list"></i> Category : <span
+                                class="text-light">Phones and Tabs</span></span>
+                        <span class="fs-6 text-warning "> <i class="bi bi-person-video2"></i> Seller : <span
+                                class="text-light">email@gmail.com</span></span>
+                        <hr class="border-warning">
+                        <button class="btn btn-success">Details</button>
+                    </div>
+                </div>
+
+                <a href="AdminSignin.php" type="button" class="btn btn-light d-lg-none"
+                    style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;"><i
+                        class="bi bi-box-arrow-left"></i> Log Out</a>
+
+
+            </div>
+            <!-- Manage Products -->
+
+        </div>
+
+    </div>
+    <script src="bootstrap.bundle.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
